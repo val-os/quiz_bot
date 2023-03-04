@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tg-quiz"
+version = "0.1.0"
+description = ""
+authors = ["osott <dezzignet@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tg_quiz"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.0"
+python-telegram-bot = "~13"
+
+[tool.poetry.group.dev.dependencies]
+wemake-python-styleguide = "^0.17.0"
+requests-cache = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style.toml"
